@@ -55,6 +55,9 @@ target 'mini_app1' do
   )
 
   post_install do |installer|
+    pod 'react-native-config', :path => '../node_modules/react-native-config'
+    pod 'RNPermissions', :path => '../node_modules/react-native-permissions'
+
     # https://github.com/facebook/react-native/blob/main/packages/react-native/scripts/react_native_pods.rb#L197-L202
     react_native_post_install(
       installer,

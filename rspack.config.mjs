@@ -50,6 +50,7 @@ const config = (_env) => {
           './MiniApp1': './src/App.tsx',
           './MiniApp1Home': './src/views/home/index.tsx',
           './MiniApp1Camera': './src/views/camera/index.tsx',
+          './MiniApp1Env': './src/views/env/index.tsx',
         },
         shared: {
           react: { singleton: true, eager: isDev, requiredVersion: '19.1.0' },
@@ -62,8 +63,9 @@ const config = (_env) => {
           '@react-navigation/elements': { singleton: true, eager: isDev },
           '@react-navigation/bottom-tabs': { singleton: true, eager: isDev },
           '@react-native-masked-view/masked-view': { singleton: true, eager: isDev },
-          'react-native-permissions': { singleton: true, eager: isDev },
           'react-native-vision-camera': { singleton: true, eager: isDev },
+          'react-native-permissions': { singleton: true, eager: isDev },
+          'react-native-config': { singleton: true, eager: isDev },
         },
         dts: false
       })

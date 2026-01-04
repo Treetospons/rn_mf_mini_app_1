@@ -9,6 +9,7 @@ const Home = ({ navigation }: Props) => {
         <View style={styles.container}>
             <Text style={styles.text}>Mini App 1</Text>
             <Button title="Open Camera" onPress={() => navigation.navigate('Camera')} />
+            <Button title="Open Env" onPress={() => navigation.navigate('Env')} />
         </View>
     )
 }

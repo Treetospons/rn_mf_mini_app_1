@@ -43,6 +43,10 @@ const config = (_env) => {
     },
     plugins: [
       new Repack.RepackPlugin(),
+      new Repack.plugins.CodeSigningPlugin({
+        enabled: true,
+        privateKeyPath: "./code-signing.pem",
+      }),
       new Repack.plugins.ModuleFederationPluginV2({
         name: 'mini_app1',
         filename: "mini_app1.container.bundle",
